@@ -17,8 +17,6 @@ public class TestTest {
         WebDriver webDriver = new ChromeDriver();
         webDriver.get("https://www.baidu.com");
         System.out.println(webDriver.getTitle());
-        //关闭浏览器
-        webDriver.quit();
     }
     @BeforeTest
     public void beforeTest() {
