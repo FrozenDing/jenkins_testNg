@@ -42,6 +42,20 @@
             <artifactId>testng</artifactId>
             <version>6.10</version>
         </dependency>
+
+        <!-- testng maven坐标 -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8.8</version>
+        </dependency>
+
+        <!-- allure2 maven坐标 -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.6.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -51,11 +65,18 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
                 <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                     <suiteXmlFiles>
                         <!--suppress UnresolvedMavenProperty -->
                         <suiteXmlFile>${xmlFileName}</suiteXmlFile>
                     </suiteXmlFiles>
+                    <systemProperties>
+                        <property>
+                            <value>allure-results</value>
+                            <name>allure.results.directory</name>
+                        </property>
+                    </systemProperties>
                 </configuration>
             </plugin>
         </plugins>
