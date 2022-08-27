@@ -60,6 +60,34 @@
 
     <build>
         <plugins>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                <version>2.22.0</version>-->
+<!--                <configuration>-->
+<!--                    <argLine>-Dfile.encoding=UTF-8</argLine>-->
+<!--                    <suiteXmlFiles>-->
+<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                        <suiteXmlFile>${xmlFileName}</suiteXmlFile>-->
+<!--&lt;!&ndash;                        <suiteXmlFile>testng.xml</suiteXmlFile>&ndash;&gt;-->
+<!--                    </suiteXmlFiles>-->
+<!--                    <systemProperties>-->
+<!--                        <property>-->
+<!--                            &lt;!&ndash; 配置 allure 结果存储路径  &ndash;&gt;-->
+<!--                            <name>allure.results.directory</name>-->
+<!--                            <value>${project.build.directory}/allure-results</value>-->
+<!--                        </property>-->
+<!--                    </systemProperties>-->
+<!--                </configuration>-->
+<!--                <dependencies>-->
+<!--                    &lt;!&ndash; aspectjweaver maven坐标 &ndash;&gt;-->
+<!--                    <dependency>-->
+<!--                        <groupId>org.aspectj</groupId>-->
+<!--                        <artifactId>aspectjweaver</artifactId>-->
+<!--                        <version>${aspectj.version}</version>-->
+<!--                    </dependency>-->
+<!--                </dependencies>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -69,24 +97,8 @@
                     <suiteXmlFiles>
                         <!--suppress UnresolvedMavenProperty -->
                         <suiteXmlFile>${xmlFileName}</suiteXmlFile>
-<!--                        <suiteXmlFile>testng.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
-                    <systemProperties>
-                        <property>
-                            <!-- 配置 allure 结果存储路径  -->
-                            <name>allure.results.directory</name>
-                            <value>${project.build.directory}/allure-results</value>
-                        </property>
-                    </systemProperties>
                 </configuration>
-                <dependencies>
-                    <!-- aspectjweaver maven坐标 -->
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                </dependencies>
             </plugin>
         </plugins>
     </build>
