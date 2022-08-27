@@ -2,7 +2,6 @@
 
 <html>
   <head>
-  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
     <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
@@ -24,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-SuiteDDemo">
-              <span class="suite-name border-failed">SuiteDDemo</span>
+              <span class="suite-name border-passed">SuiteDDemo</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-SuiteDDemo" class="hide-methods failed suite-SuiteDDemo"> (hide)</a> <!-- hide-methods failed suite-SuiteDDemo -->
-                      <a href="#" panel-name="suite-SuiteDDemo" class="show-methods failed suite-SuiteDDemo"> (show)</a> <!-- show-methods failed suite-SuiteDDemo -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SuiteDDemo" class="hide-methods passed suite-SuiteDDemo"> (hide)</a> <!-- hide-methods passed suite-SuiteDDemo -->
+                      <a href="#" panel-name="suite-SuiteDDemo" class="show-methods passed suite-SuiteDDemo"> (show)</a> <!-- show-methods passed suite-SuiteDDemo -->
                     </span>
-                    <div class="method-list-content failed suite-SuiteDDemo">
+                    <div class="method-list-content passed suite-SuiteDDemo">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-SuiteDDemo" title="TestTest" hash-for-method="test01">test01</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-SuiteDDemo -->
+                    </div> <!-- method-list-content passed suite-SuiteDDemo -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +116,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SuiteDDemo" class="panel SuiteDDemo">
-          <div class="suite-SuiteDDemo-class-failed">
+          <div class="suite-SuiteDDemo-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">TestTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,14 +127,10 @@
                   <a name="test01">
                   </a> <!-- test01 -->
                   <span class="method-name">test01</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [鐧惧害涓�涓嬶紝浣犲氨鐭ラ亾] but found [百度一下，你就知道]
-	at TestTest.test01(TestTest.java:20)
-... Removed 40 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SuiteDDemo-class-failed -->
+          </div> <!-- suite-SuiteDDemo-class-passed -->
         </div> <!-- panel SuiteDDemo -->
         <div panel-name="test-xml-SuiteDDemo" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -145,7 +140,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;SuiteDDemo&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;SuiteDDemo&quot; parallel=&quot;none&quot;&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestTest&quot;/&gt;
@@ -192,12 +187,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test01')
 data.setCell(0, 2, 'TestTest')
-data.setCell(0, 3, 16397);
+data.setCell(0, 3, 8452);
 window.suiteTableData['SuiteDDemo']= { tableData: data, tableDiv: 'times-div-SuiteDDemo'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-SuiteDDemo">
               </div> <!-- times-div-SuiteDDemo -->
             </div> <!-- times-div -->
@@ -230,29 +225,27 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">13 ms</span>
+                <span class="method-start">17 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">22 ms</span>
+                <span class="method-start">20 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">test01</span>
-                <span class="method-start">22 ms</span>
+                <span class="method-start">85 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">16422 ms</span>
+                <span class="method-start">8546 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">16422 ms</span>
+                <span class="method-start">8549 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">16423 ms</span>
+                <span class="method-start">8554 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
