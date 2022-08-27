@@ -1,4 +1,6 @@
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,9 +12,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
+@Epic("类似一级目录")
+@Feature("类似二级目录")
 public class TestTest {
-    @Test
-    @Story("AFAF")
+    @Test(description = "测试用例1")
+    @Story("类似三级目录")
     public  void test01(){
         System.setProperty("webdriver.chrome.driver","D://Drivers//chromedriver.exe");
         //设置程序路径，因chrome.exe不在默认安装路径，selenium找不到
@@ -20,7 +24,9 @@ public class TestTest {
         webDriver.get("https://www.baidu.com");
         System.out.println(webDriver.getTitle());
     }
-    @Test
+
+    @Test(description = "测试用例2")
+    @Story("类似三级目录")
     public  void test02(){
         Assert.assertEquals(1,1);
     }
