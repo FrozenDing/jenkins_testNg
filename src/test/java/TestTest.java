@@ -18,6 +18,10 @@ public class TestTest {
         webDriver.get("https://www.baidu.com");
         System.out.println(webDriver.getTitle());
     }
+    @Test
+    public  void test02(){
+        Assert.assertEquals(1,1);
+    }
     @BeforeTest
     public void beforeTest() {
         System.out.println("beforeTest");
