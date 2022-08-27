@@ -10,10 +10,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
-@Feature("afaf")
 public class TestTest {
     @Test
-    @Story("story01")
     public  void test01(){
         System.setProperty("webdriver.chrome.driver","D://Drivers//chromedriver.exe");
         //设置程序路径，因chrome.exe不在默认安装路径，selenium找不到
