@@ -69,8 +69,8 @@
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                     <suiteXmlFiles>
                         <!--suppress UnresolvedMavenProperty -->
-<!--                        <suiteXmlFile>${xmlFileName}</suiteXmlFile>-->
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <suiteXmlFile>${xmlFileName}</suiteXmlFile>
+<!--                        <suiteXmlFile>testng.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                     <systemProperties>
                         <property>
