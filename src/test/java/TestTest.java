@@ -1,5 +1,4 @@
-import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -13,11 +12,11 @@ import static org.testng.Assert.*;
 public class TestTest {
     @Test
     public  void test01(){
-        System.setProperty("webdriver.chrome.driver","D://Drivers//chromedriver.exe");
-        //设置程序路径，因chrome.exe不在默认安装路径，selenium找不到
-        WebDriver webDriver = new ChromeDriver();
-        webDriver.get("https://www.baidu.com");
-        System.out.println(webDriver.getTitle());
+//        System.setProperty("webdriver.chrome.driver","D://Drivers//chromedriver.exe");
+//        //设置程序路径，因chrome.exe不在默认安装路径，selenium找不到
+//        WebDriver webDriver = new ChromeDriver();
+//        webDriver.get("https://www.baidu.com");
+//        System.out.println(webDriver.getTitle());
     }
     @BeforeTest
     public void beforeTest() {
